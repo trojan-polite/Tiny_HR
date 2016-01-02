@@ -1,0 +1,30 @@
+<style>
+html, body,
+.widget_wp_simple_fading_testimonials {
+    height: 100%;
+    display: block;
+}
+
+.widget_wp_simple_fading_testimonials {
+    display: block;
+    overflow: visible;
+    clear: both;
+    min-height: 50px;
+}
+
+.widget_wp_simple_fading_testimonials ul {
+    position: relative;
+    display: block;
+    overflow: visible;
+}
+
+.widget_wp_simple_fading_testimonials ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: visible;
+    list-style: none;
+    display: block;
+    opacity: 0;
+}
+</style>
