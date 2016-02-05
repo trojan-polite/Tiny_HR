@@ -21,7 +21,7 @@
     GNU General Public License for more details.
 
   You may find a copy of the GNU General Public License at http://www.gnu.org/licenses/gpl.html
-*/
+*/ 
 
 // require admin files
 require_once 'admin/sft_admin.php';
