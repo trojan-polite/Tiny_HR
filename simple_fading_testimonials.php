@@ -27,7 +27,7 @@
 require_once 'admin/sft_admin.php';
 
 
-/* Create Custom Post Type */
+/* Create Custom Post Type */ 
 function testimonials_post_type() {
 
   // set up labels
