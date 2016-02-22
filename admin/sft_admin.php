@@ -132,14 +132,14 @@ function widget($args, $instance) {
         $testimonial_content = get_the_content(); // grab the content
             echo '<li>';
         if ($testimonial_content) { // check if field is set
-            echo '<p class="testimonial_content">'.$testimonial_content.'</p>';
+            echo ''.$testimonial_content.'';
         };
             if ($testimonial_author) { // check if field is set
-                echo '<p class="testimonial_author">';
+                echo '<span class="author">';
                 if($author_prefix) { // check if field is set
                   echo $author_prefix.' ';
                 };
-                echo $testimonial_author. '</p>';
+                echo $testimonial_author. '</span>';
             };
             echo '</li>';
     endwhile;
@@ -149,19 +149,7 @@ function widget($args, $instance) {
 
 
 
-// var_dump($instance['speed_transition']);
 
-// function pw_load_scripts() {
-
-//     wp_enqueue_script('pw-script', plugin_dir_url( __FILE__ ) . '/assets/js/load_fader.js');
-//     wp_localize_script('pw-script', 'pw_script_vars', array(
-//             // 'alert' => __('Hey! You have clicked the button jim!', 'pippin'),
-//             'delaySpeed' => $instance['speed_transition']
-//         )
-//     );
-
-// }
-// add_action('wp_enqueue_scripts', 'pw_load_scripts');
 
 }}
 
