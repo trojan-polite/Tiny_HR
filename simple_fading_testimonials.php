@@ -63,7 +63,7 @@ function testimonials_post_type() {
 
 }
 add_action( 'init', 'testimonials_post_type' );
-add_action( 'add_meta_boxes', 'add_events_metaboxes' );
+//add_action( 'add_meta_boxes', 'add_events_metaboxes' );
 // END Create Custom Post Type -----------------------------------------------
 
 
@@ -82,7 +82,11 @@ function sft_js_css() {
 
 
 
-
+function wpb_adding_scripts() {
+wp_register_script( 'my-amazing-script', plugins_url( '/assets/js/run.js', __FILE__ ), array( 'jquery' ), true );
+wp_enqueue_script('my-amazing-script');
+}
+add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' ); 
 
 
 
