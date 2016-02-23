@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 
     var maxHeight = Math.max.apply(Math, totalHeight); // find max li height used
     
-    console.log(maxHeight);
-    $(".widget_wp_simple_fading_testimonials").height(maxHeight); // assign that height to widget
+    //console.log(maxHeight);
+    $(".widget_wp_simple_fading_testimonials ul").height(maxHeight); // assign that height to widget
 
 });

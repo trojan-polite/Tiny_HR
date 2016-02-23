@@ -82,11 +82,15 @@ function sft_js_css() {
 
 
 
+
+
+
+
 function wpb_adding_scripts() {
 wp_register_script( 'my-amazing-script', plugins_url( '/assets/js/run.js', __FILE__ ), array( 'jquery' ), true );
 wp_enqueue_script('my-amazing-script');
 }
-add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' ); 
+add_action( 'wp_footer', 'wpb_adding_scripts' ); 
 
 
 

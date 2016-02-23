@@ -24,8 +24,7 @@
 
 .widget_wp_simple_fading_testimonials ul li .author {
     display: block;
-    color: blue;
+    color: green;
     font-style: italic;
-    /*opacity:0;*/
     padding-top: 8px;
 }
