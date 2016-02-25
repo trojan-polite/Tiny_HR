@@ -70,10 +70,12 @@ function run_plugin_name() {
 
 	$plugin = new Plugin_Name();
 	$plugin->run();
+  
+  require_once('admin/partials/custom_field.php');
+
 
 }
 run_plugin_name();
-
 
 
 
