@@ -16,9 +16,9 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/public
- * @author     Your Name <email@example.com>
+ * @package    Simple-Fading-Testimonials
+ * @subpackage Simple-Fading-Testimonials/admin
+ * @author     Stephen Kempin <info@stephenkempin.co.uk>
  */
 class Plugin_Name_Public {
 

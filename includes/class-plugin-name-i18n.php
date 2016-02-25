@@ -20,9 +20,9 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
- * @author     Your Name <email@example.com>
+ * @package    Simple-Fading-Testimonials
+ * @subpackage Simple-Fading-Testimonials/admin
+ * @author     Stephen Kempin <info@stephenkempin.co.uk>
  */
 class Plugin_Name_i18n {
 

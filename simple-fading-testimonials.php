@@ -72,6 +72,8 @@ function run_plugin_name() {
 	$plugin->run();
   
   	require_once('admin/partials/custom_field.php');
+  	
+  	require_once('admin/partials/widget.php');
 
 
 }

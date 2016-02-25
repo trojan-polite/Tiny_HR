@@ -6,8 +6,9 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    Simple-Fading-Testimonials
+ * @subpackage Simple-Fading-Testimonials/includes
+ * @author     Stephen Kempin <info@stephenkempin.co.uk>
  */
 
 /**
@@ -17,9 +18,9 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
- * @author     Your Name <email@example.com>
+ * @package    Simple-Fading-Testimonials
+ * @subpackage Simple-Fading-Testimonials/admin
+ * @author     Stephen Kempin <info@stephenkempin.co.uk>
  */
 class Plugin_Name_Loader {
 
