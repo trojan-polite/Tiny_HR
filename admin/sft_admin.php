@@ -150,7 +150,19 @@ function widget($args, $instance) {
 
 
 
+$GLOBALS['A'] = $instance['duration_testimonial'];
 
+	print_r("<script language='javascript'>
+					$(document).ready(function(){
+				$('.testimonial_box') .cycle({
+					fx: '$parameters->effect',
+					speed: $instance->duration_testimonial, 
+					timeout:$parameters->transition_timeout,
+					width:$parameters->width,
+					height:$parameters->height
+				});});</script>");
+
+echo 'test duration:'.$instance->duration_testimonial;
 }}
 
 
@@ -202,5 +214,10 @@ add_filter( 'enter_title_here', 'wpfstop_change_default_title' );
 
 // register widget
 add_action('widgets_init', create_function('', 'return register_widget("wp_simple_fading_testimonials");'));
+
+
+
+
+
 
 ?>

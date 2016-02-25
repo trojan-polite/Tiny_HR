@@ -36,9 +36,6 @@
 
         };
         
-        
-
-
 
         // find li, add to text array and hide them
         var testimonial = [];
@@ -70,5 +67,6 @@
 
 
     };
+    
 
 }(jQuery));
