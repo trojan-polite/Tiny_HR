@@ -22,7 +22,7 @@
  * @subpackage Simple-Fading-Testimonials/admin
  * @author     Stephen Kempin <info@stephenkempin.co.uk>
  */
-class Plugin_Name_Loader {
+class Simple_Fading_Testimonials_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

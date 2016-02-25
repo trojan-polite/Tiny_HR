@@ -28,7 +28,7 @@
  * @subpackage Simple-Fading-Testimonials/admin
  * @author     Stephen Kempin <info@stephenkempin.co.uk>
  */
-class Plugin_Name {
+class Simple_Fading_Testimonials {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power

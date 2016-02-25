@@ -34,22 +34,22 @@ if ( ! defined( 'WPINC' ) ) {
  * The code that runs during plugin activation.
  * This action is documented in includes/class-plugin-name-activator.php
  */
-function activate_plugin_name() {
+function activate_Simple_Fading_Testimonials_() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-activator.php';
-	Plugin_Name_Activator::activate();
+	Simple_Fading_TestimonialsActivator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-plugin-name-deactivator.php
  */
-function deactivate_plugin_name() {
+function deactivate_Simple_Fading_Testimonials_() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-deactivator.php';
-	Plugin_Name_Deactivator::deactivate();
+	Simple_Fading_TestimonialsDeactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_plugin_name' );
-register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
+register_activation_hook( __FILE__, 'activate_Simple_Fading_Testimonials_' );
+register_deactivation_hook( __FILE__, 'deactivate_Simple_Fading_Testimonials_' );
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -66,18 +66,17 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name.php';
  *
  * @since    1.0.0
  */
-function run_plugin_name() {
+function run_Simple_Fading_Testimonials() {
 
-	$plugin = new Plugin_Name();
+	$plugin = new Simple_Fading_Testimonials_();
 	$plugin->run();
   
   	require_once('admin/partials/custom_field.php');
-  	
   	require_once('admin/partials/widget.php');
 
-
 }
-run_plugin_name();
+
+run_Simple_Fading_Testimonials_();
 
 
 

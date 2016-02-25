@@ -20,7 +20,7 @@
  * @subpackage Simple-Fading-Testimonials/admin
  * @author     Stephen Kempin <info@stephenkempin.co.uk>
  */
-class Plugin_Name_Admin {
+class Simple_Fading_Testimonials_Admin {
 
 	/**
 	 * The ID of this plugin.

@@ -24,7 +24,7 @@
  * @subpackage Simple-Fading-Testimonials/admin
  * @author     Stephen Kempin <info@stephenkempin.co.uk>
  */
-class Plugin_Name_i18n {
+class Simple_Fading_Testimonials_i18n {
 
 
 	/**
