@@ -32,30 +32,30 @@ if ( ! defined( 'WPINC' ) ) {
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-plugin-name-activator.php
+ * This action is documented in includes/class-sft-activator.php
  */
-function activate_Simple_Fading_Testimonials_() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-activator.php';
+function activate_Simple_Fading_Testimonials() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-sft-activator.php';
 	Simple_Fading_TestimonialsActivator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-plugin-name-deactivator.php
+ * This action is documented in includes/class-sft-deactivator.php
  */
-function deactivate_Simple_Fading_Testimonials_() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-deactivator.php';
+function deactivate_Simple_Fading_Testimonials() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-sft-deactivator.php';
 	Simple_Fading_TestimonialsDeactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_Simple_Fading_Testimonials_' );
-register_deactivation_hook( __FILE__, 'deactivate_Simple_Fading_Testimonials_' );
+register_activation_hook( __FILE__, 'activate_Simple_Fading_Testimonials' );
+register_deactivation_hook( __FILE__, 'deactivate_Simple_Fading_Testimonials' );
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-sft.php';
 
 /**
  * Begins execution of the plugin.
@@ -68,7 +68,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name.php';
  */
 function run_Simple_Fading_Testimonials() {
 
-	$plugin = new Simple_Fading_Testimonials_();
+	$plugin = new Simple_Fading_Testimonials();
 	$plugin->run();
   
   	require_once('admin/partials/custom_field.php');
@@ -76,7 +76,7 @@ function run_Simple_Fading_Testimonials() {
 
 }
 
-run_Simple_Fading_Testimonials_();
+run_Simple_Fading_Testimonials();
 
 
 

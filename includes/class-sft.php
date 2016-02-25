@@ -101,13 +101,13 @@ class Simple_Fading_Testimonials {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-plugin-name-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-sft-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-plugin-name-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-sft-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
@@ -120,7 +120,7 @@ class Simple_Fading_Testimonials {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/sft-public.php';
 
-		$this->loader = new Plugin_Name_Loader();
+		$this->loader = new Simple_Fading_Testimonials_Loader();
 
 	}
 
@@ -135,7 +135,7 @@ class Simple_Fading_Testimonials {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Plugin_Name_i18n();
+		$plugin_i18n = new Simple_Fading_Testimonials_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -150,7 +150,7 @@ class Simple_Fading_Testimonials {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Plugin_Name_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new Simple_Fading_Testimonials_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
@@ -166,7 +166,7 @@ class Simple_Fading_Testimonials {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Plugin_Name_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new Simple_Fading_Testimonials_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
