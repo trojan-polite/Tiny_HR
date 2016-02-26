@@ -17,12 +17,16 @@ if( $instance) {
      $duration_testimonial = esc_attr($instance['duration_testimonial']);
      $speed_transition = esc_attr($instance['speed_transition']);
      $author_prefix = esc_attr($instance['author_prefix']);
+     $author_delay = esc_attr($instance['author_delay']);
+     $author_fade_speed = esc_attr($instance['author_fade_speed']);
 } else {
      $widget_title = '';
      $number_testimonials = '';
      $duration_testimonial = '';
      $speed_transition = '';
      $author_prefix = '';
+     $author_delay = '';
+     $author_fade_speed = '';
 } ?>
 
 <!-- set widget title -->
@@ -61,13 +65,13 @@ echo '<option value="' . $option . '" id="' . $option . '"', $number_testimonial
 <!-- set duration -->
 <p>
 <label for="<?php echo $this->get_field_id('duration_testimonial'); ?>"><?php _e('Duration of each testimonial (<em>ms</em>):', 'wp_widget_plugin'); ?></label>
-<input id="<?php echo $this->get_field_id('duration_testimonial'); ?>" name="<?php echo $this->get_field_name('duration_testimonial'); ?>" type="number" value="<?php echo $duration_testimonial; ?>" />
+<input id="<?php echo $this->get_field_id('duration_testimonial'); ?>" name="<?php echo $this->get_field_name('duration_testimonial'); ?>" type="number" value="<?php echo (empty($duration_testimonial) ? 2500 : $duration_testimonial); ?>" size="3" />
 </p>
 
 <!-- set transition speed -->
 <p>
 <label for="<?php echo $this->get_field_id('speed_transition'); ?>"><?php _e('Transition speed (<em>ms</em>):', 'wp_widget_plugin'); ?></label>
-<input id="<?php echo $this->get_field_id('speed_transition'); ?>" name="<?php echo $this->get_field_name('speed_transition'); ?>" type="number" value="<?php echo $speed_transition; ?>" />
+<input id="<?php echo $this->get_field_id('speed_transition'); ?>" name="<?php echo $this->get_field_name('speed_transition'); ?>" type="number" value="<?php echo (empty($speed_transition) ? 2500 : $speed_transition); ?>" />
 </p>
 
 <!-- set testimonial author preflix -->
@@ -90,6 +94,19 @@ $prefixes = array('', '-', '--', '•','~');
  </select>
 </p>
 
+<!-- set author delay speed -->
+<p>
+<label for="<?php echo $this->get_field_id('author_delay'); ?>"><?php _e('Author Delay (<em>ms</em>):', 'wp_widget_plugin'); ?></label>
+<input id="<?php echo $this->get_field_id('author_delay'); ?>" name="<?php echo $this->get_field_name('author_delay'); ?>" type="number" value="<?php echo (empty($author_delay) ? 2500 : $author_delay); ?>" />
+</p>
+
+
+<!-- set author fade IN speed -->
+<p>
+<label for="<?php echo $this->get_field_id('author_fade_speed'); ?>"><?php _e('Author Fade In Speed (<em>ms</em>):', 'wp_widget_plugin'); ?></label>
+<input id="<?php echo $this->get_field_id('author_fade_speed'); ?>" name="<?php echo $this->get_field_name('author_fade_speed'); ?>" type="number" value="<?php echo (empty($author_fade_speed) ? 2500 : $author_fade_speed); ?>" />
+</p>
+
 
 <?php }
 // update widget
@@ -101,6 +118,8 @@ function update($new_instance, $old_instance) {
       $instance['duration_testimonial'] = strip_tags($new_instance['duration_testimonial']);
       $instance['speed_transition'] = strip_tags($new_instance['speed_transition']);
       $instance['author_prefix'] = strip_tags($new_instance['author_prefix']);
+      $instance['author_delay'] = strip_tags($new_instance['author_delay']);
+      $instance['author_fade_speed'] = strip_tags($new_instance['author_fade_speed']);
       return $instance;
 }
 
