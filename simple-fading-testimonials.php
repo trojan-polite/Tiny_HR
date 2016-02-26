@@ -36,7 +36,7 @@ if ( ! defined( 'WPINC' ) ) {
  */
 function activate_Simple_Fading_Testimonials() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-sft-activator.php';
-	Simple_Fading_TestimonialsActivator::activate();
+	Simple_Fading_Testimonials_Activator::activate();
 }
 
 /**
@@ -45,7 +45,7 @@ function activate_Simple_Fading_Testimonials() {
  */
 function deactivate_Simple_Fading_Testimonials() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-sft-deactivator.php';
-	Simple_Fading_TestimonialsDeactivator::deactivate();
+	Simple_Fading_Testimonials_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_Simple_Fading_Testimonials' );

@@ -41,14 +41,6 @@ add_action( 'init', 'testimonials_post_type' );
 // END Create Custom Post Type -----------------------------------------------
 
 
-
-
-
-
-
-
-
-
 // add custom columns in admin -----------------------------------------------
 add_filter('manage_edit-testimonial_columns', 'testimonials_table_head');
 function testimonials_table_head( $defaults ) {
