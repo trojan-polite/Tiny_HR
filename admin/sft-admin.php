@@ -100,4 +100,12 @@ class Simple_Fading_Testimonials_Admin {
 
 	}
 	
+	
+	
+	
 }
+
+
+/* Include partial files */
+require_once('partials/custom_field.php');
+require_once('partials/widget.php');

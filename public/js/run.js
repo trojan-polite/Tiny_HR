@@ -2,8 +2,8 @@
 jQuery(document).ready(function($) {
 
     $(".widget_wp_simple_fading_testimonials").fader({
-        fadeSpeed: 400,
-        duration: 10000
+        // fadeSpeed: 400,
+        // duration: 10000
     })
 
     var totalHeight = []; // create new array
