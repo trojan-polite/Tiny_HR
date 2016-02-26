@@ -97,8 +97,12 @@ class Simple_Fading_Testimonials_Public {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/sft-public.js', array( 'jquery' ), $this->version, false );
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/run.js', array( 'jquery' ), $this->version, false );
 
 	}
+	
 
 }
+
+
+/* Include partial files */
+require_once('partials/docReady.php');

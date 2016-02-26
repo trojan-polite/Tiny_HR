@@ -74,6 +74,3 @@ function run_Simple_Fading_Testimonials() {
 }
 
 run_Simple_Fading_Testimonials();
-
-
-
