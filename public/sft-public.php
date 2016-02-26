@@ -96,7 +96,7 @@ class Simple_Fading_Testimonials_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/sft-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/sft-public.min.js', array( 'jquery' ), $this->version, false );
 
 	}
 	
