@@ -1,9 +1,10 @@
 === Simple Fading Testimonials Widget ===
-Contributors: Stephen Kempin
+Contributors: skempin
 Tags: testimonials, quotes, widgets
 Requires at least: 4.3.1
 Tested up to: 4.3.1
-License: GPL2
+Stable tag:  /trunk/
+License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 
 Easily add revolving and fading testimonials to your site, via widgets.
