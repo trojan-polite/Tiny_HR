@@ -9,7 +9,7 @@ function wp_simple_fading_testimonials() {
 
 // widget form creation
 function form($instance) {
-
+    
 // check values
 if( $instance) {
      $widget_custom_title = esc_attr($instance['widget_custom_title']);
@@ -74,7 +74,7 @@ echo '<option value="' . $option . '" id="' . $option . '"', $number_testimonial
 <input id="<?php echo $this->get_field_id('speed_transition'); ?>" name="<?php echo $this->get_field_name('speed_transition'); ?>" type="number" value="<?php echo (empty($speed_transition) ? 2500 : $speed_transition); ?>" />
 </p>
 
-<!-- set testimonial author preflix -->
+<!-- set testimonial author prefix -->
 <p>
 <label for="<?php echo $this->get_field_id('author_prefix'); ?>"><?php _e('Author prefix:', 'wp_widget_plugin'); ?></label>
 <select name="<?php echo $this->get_field_name('author_prefix'); ?>" id="<?php echo $this->get_field_id('author_prefix'); ?>" class="">
@@ -167,9 +167,10 @@ function widget($args, $instance) {
     wp_reset_query();
 }}
 
-
 // register widget
 add_action('widgets_init', create_function('', 'return register_widget("wp_simple_fading_testimonials");'));
 
-
 ?>
+
+
+

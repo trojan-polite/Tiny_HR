@@ -2,12 +2,13 @@
 function neccessary_codes_for_sft(){
      $admin_sft_settings = new wp_simple_fading_testimonials();
      $settings = $admin_sft_settings->get_settings();
-     
+     $instance_key = key($settings);
+
      // Set vars
-     $speed_transition = $settings[2][speed_transition];
-     $duration_testimonial = $settings[2][duration_testimonial];
-     $author_delay = $settings[2][author_delay];
-     $author_fade_speed = $settings[2][author_fade_speed];
+     $speed_transition = $settings[$instance_key][speed_transition];
+     $duration_testimonial = $settings[$instance_key][duration_testimonial];
+     $author_delay = $settings[$instance_key][author_delay];
+     $author_fade_speed = $settings[$instance_key][author_fade_speed];
      
 ?>
 
@@ -36,10 +37,3 @@ function neccessary_codes_for_sft(){
 
 <?php }
 add_action('wp_footer', 'neccessary_codes_for_sft');
-
-
-
-$admin_sft_settings = new wp_simple_fading_testimonials();
-     $settings = $admin_sft_settings->get_settings();
-// print_r($settings);
- 
