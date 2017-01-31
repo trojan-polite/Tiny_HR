@@ -7,15 +7,15 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://example.com
- * @since             1.0.0
+ * @link              https://en-gb.wordpress.org/plugins/simple-fading-testimonials-widget/
+ * @since             1.0.1
  * @package           Simple-Fading-Testimonials
  *
  * @wordpress-plugin
  * Plugin Name:       Simple Fading Testimonials
- * Plugin URI:        http://example.com/plugin-name-uri/
+ * Plugin URI:        https://en-gb.wordpress.org/plugins/simple-fading-testimonials-widget/
  * Description:       Easily add revolving and fading testimonials to your site, via a widget.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Stephen Kempin
  * Author URI:        http://www.stephenkempin.co.uk/
  * License:           GPL-2.0+
@@ -63,7 +63,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-sft.php';
  * then kicking off the plugin from this point in the file does
  * not affect the page life cycle.
  *
- * @since    1.0.0
+ * @since    1.0.1
  */
 function run_Simple_Fading_Testimonials() {
 
