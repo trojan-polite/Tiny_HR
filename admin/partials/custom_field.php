@@ -1,5 +1,4 @@
 <?php
-
 /* Create Custom Post Type */ 
 function testimonials_post_type() {
 

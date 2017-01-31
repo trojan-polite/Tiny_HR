@@ -171,6 +171,3 @@ function widget($args, $instance) {
 add_action('widgets_init', create_function('', 'return register_widget("wp_simple_fading_testimonials");'));
 
 ?>
-
-
-

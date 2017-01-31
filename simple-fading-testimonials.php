@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The plugin bootstrap file
  *
@@ -15,7 +14,7 @@
  * @wordpress-plugin
  * Plugin Name:       Simple Fading Testimonials
  * Plugin URI:        http://example.com/plugin-name-uri/
- * Description:       Easily add revolving and fading testimonials to your site, via widgets.
+ * Description:       Easily add revolving and fading testimonials to your site, via a widget.
  * Version:           1.0.0
  * Author:            Stephen Kempin
  * Author URI:        http://www.stephenkempin.co.uk/
