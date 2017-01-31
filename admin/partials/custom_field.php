@@ -4,19 +4,19 @@ function testimonials_post_type() {
 
   // set up labels
   $labels = array(
-    'name' => 'Testimonials',
-      'singular_name' => 'Testimonials',
-      'add_new' => 'Add New Testimonial',
-      'add_new_item' => 'Add New Testimonial',
-      'edit_item' => 'Edit Testimonial',
-      'new_item' => 'New Testimonial',
-      'all_items' => 'All Testimonials',
-      'view_item' => 'View Testimonial',
-      'search_items' => 'Search Testimonials',
-      'not_found' =>  'No Testimonials Found',
-      'not_found_in_trash' => 'No Testimonials found in Trash',
+      'name' =>  __('Testimonials', 'Simple-Fading-Testimonials'),
+      'singular_name' => __('Testimonials', 'Simple-Fading-Testimonials'),
+      'add_new' => __('Add New Testimonial', 'Simple-Fading-Testimonials'),
+      'add_new_item' => __('Add New Testimonial', 'Simple-Fading-Testimonials'),
+      'edit_item' => __('Edit Testimonial', 'Simple-Fading-Testimonials'),
+      'new_item' => __('New Testimonial', 'Simple-Fading-Testimonials'),
+      'all_items' => __('All Testimonials', 'Simple-Fading-Testimonials'),
+      'view_item' => __('View Testimonial', 'Simple-Fading-Testimonials'),
+      'search_items' => __('Search Testimonials', 'Simple-Fading-Testimonials'),
+      'not_found' =>  __('No Testimonials Found', 'Simple-Fading-Testimonials'),
+      'not_found_in_trash' => __('No Testimonials found in Trash', 'Simple-Fading-Testimonials'),
       'parent_item_colon' => '',
-      'menu_name' => 'Testimonials',
+      'menu_name' => __('Testimonials', 'Simple-Fading-Testimonials'),
     );
 
   //register post type
@@ -43,8 +43,8 @@ add_action( 'init', 'testimonials_post_type' );
 // add custom columns in admin -----------------------------------------------
 add_filter('manage_edit-testimonial_columns', 'testimonials_table_head');
 function testimonials_table_head( $defaults ) {
-    $defaults['testimonial_content']  = 'Testimonial Content';
-    $defaults['word_count']   = 'Word Count';
+    $defaults['testimonial_content'] = __('Testimonial Content', 'Simple-Fading-Testimonials');
+    $defaults['word_count'] = __('Word Count', 'Simple-Fading-Testimonials');
     return $defaults;
 }
 
@@ -78,7 +78,7 @@ function testimonials_table_content( $column_name, $post_id ) {
 function wpfstop_change_default_title( $title ){
     $screen = get_current_screen();
     if ( 'testimonial' == $screen->post_type ){
-        $title = 'Enter testimonial author';
+        $title = _e('Enter testimonial author', 'Simple-Fading-Testimonials');
     }
     return $title;
 }
