@@ -47,6 +47,9 @@ Yes, all settings are controlled via the "Appearance" -> "Widgets" area.
 = 1.0 =
 * Initial release.
 
-= 1.0.1 =
+= 1.0.2 =
 * Minor bug fixes.
 * Adjustment of defaault transition settings.
+
+= 1.0.2 =
+* Internationalisation translation preperation fixes.

@@ -20,7 +20,7 @@
  * https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate/pull/123#issuecomment-28541913
  *
  * @link       https://en-gb.wordpress.org/plugins/simple-fading-testimonials-widget/
- * @since      1.0.1
+ * @since      1.0.2
  *
  * @package    Simple-Fading-Testimonials
  */

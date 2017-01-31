@@ -3,7 +3,7 @@
  * Fired during plugin deactivation
  *
  * @link       https://en-gb.wordpress.org/plugins/simple-fading-testimonials-widget/
- * @since      1.0.1
+ * @since      1.0.2
  *
  * @package    Simple-Fading-Testimonials
  * @subpackage Simple-Fading-Testimonials/includes
@@ -15,7 +15,7 @@
  *
  * This class defines all code necessary to run during the plugin's deactivation.
  *
- * @since      1.0.1
+ * @since      1.0.2
  * @package    Simple-Fading-Testimonials
  * @subpackage Simple-Fading-Testimonials/admin
  * @author     Stephen Kempin <info@stephenkempin.co.uk>
@@ -27,7 +27,7 @@ class Simple_Fading_Testimonials_Deactivator {
 	 *
 	 * Long Description.
 	 *
-	 * @since    1.0.1
+	 * @since    1.0.2
 	 */
 	public static function deactivate() {
 
