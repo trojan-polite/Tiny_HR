@@ -3,7 +3,7 @@
  * The public-facing functionality of the plugin.
  *
  * @link       https://en-gb.wordpress.org/plugins/simple-fading-testimonials-widget/
- * @since      1.0.2
+ * @since      1.1.0
  *
  * @package    Simple-Fading-Testimonials
  * @subpackage Simple-Fading-Testimonials/public
@@ -24,7 +24,7 @@ class Simple_Fading_Testimonials_Public {
 	/**
 	 * The ID of this plugin.
 	 *
-	 * @since    1.0.2
+	 * @since    1.1.0
 	 * @access   private
 	 * @var      string    $plugin_name    The ID of this plugin.
 	 */
@@ -33,7 +33,7 @@ class Simple_Fading_Testimonials_Public {
 	/**
 	 * The version of this plugin.
 	 *
-	 * @since    1.0.2
+	 * @since    1.1.0
 	 * @access   private
 	 * @var      string    $version    The current version of this plugin.
 	 */
@@ -42,7 +42,7 @@ class Simple_Fading_Testimonials_Public {
 	/**
 	 * Initialize the class and set its properties.
 	 *
-	 * @since    1.0.2
+	 * @since    1.1.0
 	 * @param      string    $plugin_name       The name of the plugin.
 	 * @param      string    $version    The version of this plugin.
 	 */
@@ -56,7 +56,7 @@ class Simple_Fading_Testimonials_Public {
 	/**
 	 * Register the stylesheets for the public-facing side of the site.
 	 *
-	 * @since    1.0.2
+	 * @since    1.1.0
 	 */
 	public function enqueue_styles() {
 
@@ -79,7 +79,7 @@ class Simple_Fading_Testimonials_Public {
 	/**
 	 * Register the JavaScript for the public-facing side of the site.
 	 *
-	 * @since    1.0.2
+	 * @since    1.1.0
 	 */
 	public function enqueue_scripts() {
 
