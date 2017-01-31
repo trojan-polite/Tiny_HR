@@ -2,12 +2,12 @@
 Contributors: skempin
 Tags: testimonials, quotes, widgets
 Requires at least: 4.3.1
-Tested up to: 4.6
+Tested up to: 4.7.2
 Stable tag:  /trunk/
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 
-Easily add revolving and fading testimonials to your site, via widgets.
+Easily add revolving and fading testimonials to your site, via a widget.
 
 == Installation ==
 1. Download the zip file, and unzip it.
@@ -17,7 +17,7 @@ Easily add revolving and fading testimonials to your site, via widgets.
 
 == Description ==
 
-The Simple Fading Testimonials Widget enables easy to add revolving and fading testimonials through the widget areas. 
+The Simple Fading Testimonials Widget enables easy to add revolving and fading testimonials through the widget area. 
 
 
 == Installation ==
@@ -46,3 +46,7 @@ Yes, all settings are controlled via the "Appearance" -> "Widgets" area.
 
 = 1.0 =
 * Initial release.
+
+= 1.0.1 =
+* Minor bug fixes.
+* Adjustment of defaault transition settings.
