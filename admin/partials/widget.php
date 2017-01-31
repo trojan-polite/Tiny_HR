@@ -65,13 +65,13 @@ echo '<option value="' . $option . '" id="' . $option . '"', $number_testimonial
 <!-- set duration -->
 <p>
 <label for="<?php echo $this->get_field_id('duration_testimonial'); ?>"><?php _e('Duration of each testimonial (<em>ms</em>):', 'wp_widget_plugin'); ?></label>
-<input id="<?php echo $this->get_field_id('duration_testimonial'); ?>" name="<?php echo $this->get_field_name('duration_testimonial'); ?>" type="number" value="<?php echo (empty($duration_testimonial) ? 2500 : $duration_testimonial); ?>" size="3" />
+<input id="<?php echo $this->get_field_id('duration_testimonial'); ?>" name="<?php echo $this->get_field_name('duration_testimonial'); ?>" type="number" value="<?php echo (empty($duration_testimonial) ? 4000 : $duration_testimonial); ?>" size="3" />
 </p>
 
 <!-- set transition speed -->
 <p>
 <label for="<?php echo $this->get_field_id('speed_transition'); ?>"><?php _e('Transition speed (<em>ms</em>):', 'wp_widget_plugin'); ?></label>
-<input id="<?php echo $this->get_field_id('speed_transition'); ?>" name="<?php echo $this->get_field_name('speed_transition'); ?>" type="number" value="<?php echo (empty($speed_transition) ? 2500 : $speed_transition); ?>" />
+<input id="<?php echo $this->get_field_id('speed_transition'); ?>" name="<?php echo $this->get_field_name('speed_transition'); ?>" type="number" value="<?php echo (empty($speed_transition) ? 500 : $speed_transition); ?>" />
 </p>
 
 <!-- set testimonial author prefix -->
@@ -97,14 +97,14 @@ $prefixes = array('', '-', '--', '•','~');
 <!-- set author delay speed -->
 <p>
 <label for="<?php echo $this->get_field_id('author_delay'); ?>"><?php _e('Author Delay (<em>ms</em>):', 'wp_widget_plugin'); ?></label>
-<input id="<?php echo $this->get_field_id('author_delay'); ?>" name="<?php echo $this->get_field_name('author_delay'); ?>" type="number" value="<?php echo (empty($author_delay) ? 2500 : $author_delay); ?>" />
+<input id="<?php echo $this->get_field_id('author_delay'); ?>" name="<?php echo $this->get_field_name('author_delay'); ?>" type="number" value="<?php echo (empty($author_delay) ? 1200 : $author_delay); ?>" />
 </p>
 
 
 <!-- set author fade IN speed -->
 <p>
 <label for="<?php echo $this->get_field_id('author_fade_speed'); ?>"><?php _e('Author Fade In Speed (<em>ms</em>):', 'wp_widget_plugin'); ?></label>
-<input id="<?php echo $this->get_field_id('author_fade_speed'); ?>" name="<?php echo $this->get_field_name('author_fade_speed'); ?>" type="number" value="<?php echo (empty($author_fade_speed) ? 2500 : $author_fade_speed); ?>" />
+<input id="<?php echo $this->get_field_id('author_fade_speed'); ?>" name="<?php echo $this->get_field_name('author_fade_speed'); ?>" type="number" value="<?php echo (empty($author_fade_speed) ? 750 : $author_fade_speed); ?>" />
 </p>
 
 
