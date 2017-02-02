@@ -20,7 +20,7 @@
  * Author URI:        http://www.stephenkempin.co.uk/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       Simple-Fading-Testimonials
+ * Text Domain:       simple-fading-testimonials
  * Domain Path:       /languages
  */
 

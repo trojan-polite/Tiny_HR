@@ -4,7 +4,7 @@ class wp_simple_fading_testimonials extends WP_Widget {
 
 // constructor
 function wp_simple_fading_testimonials() {
-  parent::WP_Widget(false, $name = __('Simple Fading Testimonials', 'Simple-Fading-Testimonials') );
+  parent::WP_Widget(false, $name = __('Simple Fading Testimonials', 'simple-fading-testimonials') );
 }
 
 // widget form creation
@@ -31,13 +31,13 @@ if( $instance) {
 
 <!-- set widget title -->
 <p>
-  <label for="<?php echo $this->get_field_id('widget_custom_title'); ?>"><?php _e('Widget Title <em>(leave blank for none)</em>:', 'Simple-Fading-Testimonials'); ?></label>
+  <label for="<?php echo $this->get_field_id('widget_custom_title'); ?>"><?php _e('Widget Title <em>(leave blank for none)</em>:', 'simple-fading-testimonials'); ?></label>
   <br><input id="<?php echo $this->get_field_id('widget_custom_title'); ?>" name="<?php echo $this->get_field_name('widget_custom_title'); ?>" type="text" value="<?php echo $widget_custom_title; ?>" />
 </p>
 
 <!-- set number of testimonials -->
 <p>
-<label for="<?php echo $this->get_field_id('number_testimonials'); ?>"><?php _e('Number of testimonials to display:', 'Simple-Fading-Testimonials');
+<label for="<?php echo $this->get_field_id('number_testimonials'); ?>"><?php _e('Number of testimonials to display:', 'simple-fading-testimonials');
   // count total posts
   $count_posts = wp_count_posts( 'testimonial' );
   // count total published testimonial posts
@@ -64,19 +64,19 @@ echo '<option value="' . $option . '" id="' . $option . '"', $number_testimonial
 
 <!-- set duration -->
 <p>
-<label for="<?php echo $this->get_field_id('duration_testimonial'); ?>"><?php _e('Duration of each testimonial (<em>ms</em>):', 'Simple-Fading-Testimonials'); ?></label>
+<label for="<?php echo $this->get_field_id('duration_testimonial'); ?>"><?php _e('Duration of each testimonial (<em>ms</em>):', 'simple-fading-testimonials'); ?></label>
 <input id="<?php echo $this->get_field_id('duration_testimonial'); ?>" name="<?php echo $this->get_field_name('duration_testimonial'); ?>" type="number" value="<?php echo (empty($duration_testimonial) ? 4000 : $duration_testimonial); ?>" size="3" />
 </p>
 
 <!-- set transition speed -->
 <p>
-<label for="<?php echo $this->get_field_id('speed_transition'); ?>"><?php _e('Transition speed (<em>ms</em>):', 'Simple-Fading-Testimonials'); ?></label>
+<label for="<?php echo $this->get_field_id('speed_transition'); ?>"><?php _e('Transition speed (<em>ms</em>):', 'simple-fading-testimonials'); ?></label>
 <input id="<?php echo $this->get_field_id('speed_transition'); ?>" name="<?php echo $this->get_field_name('speed_transition'); ?>" type="number" value="<?php echo (empty($speed_transition) ? 500 : $speed_transition); ?>" />
 </p>
 
 <!-- set testimonial author prefix -->
 <p>
-<label for="<?php echo $this->get_field_id('author_prefix'); ?>"><?php _e('Author prefix:', 'Simple-Fading-Testimonials'); ?></label>
+<label for="<?php echo $this->get_field_id('author_prefix'); ?>"><?php _e('Author prefix:', 'simple-fading-testimonials'); ?></label>
 <select name="<?php echo $this->get_field_name('author_prefix'); ?>" id="<?php echo $this->get_field_id('author_prefix'); ?>" class="">
  <?php
 $prefixes = array('', '-', '--', '•','~');
@@ -96,14 +96,14 @@ $prefixes = array('', '-', '--', '•','~');
 
 <!-- set author delay speed -->
 <p>
-<label for="<?php echo $this->get_field_id('author_delay'); ?>"><?php _e('Author Delay (<em>ms</em>):', 'Simple-Fading-Testimonials'); ?></label>
+<label for="<?php echo $this->get_field_id('author_delay'); ?>"><?php _e('Author Delay (<em>ms</em>):', 'simple-fading-testimonials'); ?></label>
 <input id="<?php echo $this->get_field_id('author_delay'); ?>" name="<?php echo $this->get_field_name('author_delay'); ?>" type="number" value="<?php echo (empty($author_delay) ? 1200 : $author_delay); ?>" />
 </p>
 
 
 <!-- set author fade IN speed -->
 <p>
-<label for="<?php echo $this->get_field_id('author_fade_speed'); ?>"><?php _e('Author Fade In Speed (<em>ms</em>):', 'Simple-Fading-Testimonials'); ?></label>
+<label for="<?php echo $this->get_field_id('author_fade_speed'); ?>"><?php _e('Author Fade In Speed (<em>ms</em>):', 'simple-fading-testimonials'); ?></label>
 <input id="<?php echo $this->get_field_id('author_fade_speed'); ?>" name="<?php echo $this->get_field_name('author_fade_speed'); ?>" type="number" value="<?php echo (empty($author_fade_speed) ? 750 : $author_fade_speed); ?>" />
 </p>
 
