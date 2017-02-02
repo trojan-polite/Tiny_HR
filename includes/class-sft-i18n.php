@@ -19,8 +19,8 @@
  * so that it is ready for translation.
  *
  * @since      1.1.0
- * @package    Simple-Fading-Testimonials
- * @subpackage Simple-Fading-Testimonials/admin
+ * @package    simple-fading-testimonials
+ * @subpackage simple-fading-testimonials/admin
  * @author     Stephen Kempin <info@stephenkempin.co.uk>
  */
 class Simple_Fading_Testimonials_i18n {
@@ -34,7 +34,7 @@ class Simple_Fading_Testimonials_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'Simple-Fading-Testimonials',
+			'simple-fading-testimonials',
 			true,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

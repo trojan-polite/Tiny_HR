@@ -22,7 +22,7 @@
  * @link       https://en-gb.wordpress.org/plugins/simple-fading-testimonials-widget/
  * @since      1.1.0
  *
- * @package    Simple-Fading-Testimonials
+ * @package    simple-fading-testimonials
  */
 
 // If uninstall not called from WordPress, then exit.

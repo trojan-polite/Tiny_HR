@@ -3,7 +3,7 @@
 
         // default settings
         var settings = $.extend({
-            fadeSpeed: 1500,
+            fadeSpeed: 1000,
             duration: 4000,
             authorDelay: 1200,
             authorFadeSpeed: 750
