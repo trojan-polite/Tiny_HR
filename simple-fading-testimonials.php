@@ -9,7 +9,7 @@
  *
  * @link              https://en-gb.wordpress.org/plugins/simple-fading-testimonials-widget/
  * @since             1.1.0
- * @package           simple-fading-testimonials
+ * @package           simple-fading-testimonials-widget
  *
  * @wordpress-plugin
  * Plugin Name:       Simple Fading Testimonials
@@ -20,7 +20,7 @@
  * Author URI:        http://www.stephenkempin.co.uk/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       simple-fading-testimonials
+ * Text Domain:       simple-fading-testimonials-widget
  * Domain Path:       /languages
  */
 

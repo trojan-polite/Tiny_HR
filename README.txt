@@ -37,13 +37,13 @@ Testimonial text is faded in first, followed by the author name. Both have separ
 
 = Links =
 * [Author Website](http://www.stephenkempin.co.uk)
-* [Github](https://github.com/SKempin/simple-fading-testimonials)
+* [Github](https://github.com/SKempin/simple-fading-testimonials-widget)
 
 
 
 == Installation ==
 
-1. Upload `simple-fading-testimonials` to the `/wp-content/plugins/` directory.
+1. Upload `simple-fading-testimonials-widget` to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the <code>Plugins</code> menu in the WordPress Admin area.
 1. Add a new testimonial via the custom post type that appears in the main menu.
 1. Go to <code>Appearance -> Widgets</code> and add a Simple Fading Testimonials widget to a sidebar of your choosing and set the required options.
