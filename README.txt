@@ -88,5 +88,8 @@ The testimonial and author text are wrapped in separate  <code>li</code> tags, a
 = 1.0.2 =
 * Internationalisation translation preperation fixes.
 
-= 1.1.0 =
+= 1.1.1 =
 * Adding translations for French (FR) and Spanish (ES).
+
+= 1.1.1 =
+* Updating plugin text domain.
