@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Simple Fading Testimonials package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Simple Fading Testimonials 1.1.1\n"
+"Project-Id-Version: Simple Fading Testimonials 1.1.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/simple-fading-"
 "testimonials-widget\n"
 "POT-Creation-Date: 2017-01-31 16:59+0000\n"

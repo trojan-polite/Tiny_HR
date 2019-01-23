@@ -8,14 +8,14 @@
  * that starts the plugin.
  *
  * @link              https://en-gb.wordpress.org/plugins/simple-fading-testimonials-widget/
- * @since             1.1.1
+ * @since             1.1.2
  * @package           simple-fading-testimonials-widget
  *
  * @wordpress-plugin
  * Plugin Name:       Simple Fading Testimonials
  * Plugin URI:        https://en-gb.wordpress.org/plugins/simple-fading-testimonials-widget/
  * Description:       Easily add revolving and fading testimonials to your site, via a widget.
- * Version:           1.1.1
+ * Version:           1.1.2
  * Author:            Stephen Kempin
  * Author URI:        http://www.stephenkempin.co.uk/
  * License:           GPL-2.0+
@@ -63,7 +63,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-sft.php';
  * then kicking off the plugin from this point in the file does
  * not affect the page life cycle.
  *
- * @since    1.1.1
+ * @since    1.1.2
  */
 function run_Simple_Fading_Testimonials() {
 

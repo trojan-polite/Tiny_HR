@@ -3,7 +3,7 @@
  * The admin-specific functionality of the plugin.
  *
  * @link       https://en-gb.wordpress.org/plugins/simple-fading-testimonials-widget/
- * @since      1.1.1
+ * @since      1.1.2
  *
  * @package    simple-fading-testimonials-widget
  * @subpackage simple-fading-testimonials-widget/admin
@@ -24,7 +24,7 @@ class Simple_Fading_Testimonials_Admin {
 	/**
 	 * The ID of this plugin.
 	 *
-	 * @since    1.1.1
+	 * @since    1.1.2
 	 * @access   private
 	 * @var      string    $plugin_name    The ID of this plugin.
 	 */
@@ -33,7 +33,7 @@ class Simple_Fading_Testimonials_Admin {
 	/**
 	 * The version of this plugin.
 	 *
-	 * @since    1.1.1
+	 * @since    1.1.2
 	 * @access   private
 	 * @var      string    $version    The current version of this plugin.
 	 */
@@ -42,7 +42,7 @@ class Simple_Fading_Testimonials_Admin {
 	/**
 	 * Initialize the class and set its properties.
 	 *
-	 * @since    1.1.1
+	 * @since    1.1.2
 	 * @param      string    $plugin_name       The name of this plugin.
 	 * @param      string    $version    The version of this plugin.
 	 */
@@ -56,7 +56,7 @@ class Simple_Fading_Testimonials_Admin {
 	/**
 	 * Register the stylesheets for the admin area.
 	 *
-	 * @since    1.1.1
+	 * @since    1.1.2
 	 */
 	public function enqueue_styles() {
 
@@ -79,7 +79,7 @@ class Simple_Fading_Testimonials_Admin {
 	/**
 	 * Register the JavaScript for the admin area.
 	 *
-	 * @since    1.1.1
+	 * @since    1.1.2
 	 */
 	public function enqueue_scripts() {
 

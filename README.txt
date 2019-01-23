@@ -2,7 +2,7 @@
 Contributors: skempin
 Tags: testimonials, quotes, widgets, fadein, fadeout, jquery, reviews, text
 Requires at least: 4.3.1
-Tested up to: 4.7.2
+Tested up to: 5.0.3
 Stable tag:  /trunk/
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl.html
@@ -88,8 +88,11 @@ The testimonial and author text are wrapped in separate  <code>li</code> tags, a
 = 1.0.2 =
 * Internationalisation translation preperation fixes.
 
-= 1.1.1 =
+= 1.1.0 =
 * Adding translations for French (FR) and Spanish (ES).
 
 = 1.1.1 =
 * Updating plugin text domain.
+
+= 1.1.2 =
+* Updating for Wordpress 5 compatibility

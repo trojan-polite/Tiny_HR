@@ -29,6 +29,11 @@ if( $instance) {
      $author_fade_speed = '';
 } ?>
 
+<!-- credits -->
+
+<p><i><a href="https://en-gb.wordpress.org/plugins/simple-fading-testimonials-widget/" target="_blank">Simple Fading Testimonials </a> by <a href="https://www.stephenkempin.co.uk/" target="_blank">Stephen Kempin</a></i></p>
+<hr>
+
 <!-- set widget title -->
 <p>
   <label for="<?php echo $this->get_field_id('widget_custom_title'); ?>"><?php _e('Widget Title <em>(leave blank for none)</em>:', 'simple-fading-testimonials-widget'); ?></label>
@@ -108,6 +113,7 @@ $prefixes = array('', '-', '--', '•','~');
 </p>
 
 
+
 <?php }
 // update widget
 function update($new_instance, $old_instance) {
@@ -171,3 +177,6 @@ function widget($args, $instance) {
 add_action('widgets_init', create_function('', 'return register_widget("wp_simple_fading_testimonials");'));
 
 ?>
+
+
+

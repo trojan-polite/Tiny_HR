@@ -2,6 +2,7 @@
 /* Create Custom Post Type */ 
 function testimonials_post_type() {
 
+
   // set up labels
   $labels = array(
       'name' =>  __('Testimonials', 'simple-fading-testimonials-widget'),
@@ -76,7 +77,6 @@ function testimonials_table_content( $column_name, $post_id ) {
 
 // edit testimonial title placeholder
 function wpfstop_change_default_title( $title ){
-    $screen = get_current_screen();
     if ( 'testimonial' == $screen->post_type ){
         $title = _e('Enter testimonial author', 'simple-fading-testimonials-widget');
     }
@@ -84,3 +84,17 @@ function wpfstop_change_default_title( $title ){
 }
 add_filter( 'enter_title_here', 'wpfstop_change_default_title' );
 // END edit testimonial title placeholder -----------------------------------------------
+
+
+
+//  add admin credits
+function my_custom_admin_credits( $footer_text ) {
+    $current_screen = get_current_screen();
+    if( $current_screen->post_type === "testimonial" ) {
+
+		$footer_text = __( 'Thank you for using <a href="https://en-gb.wordpress.org/plugins/simple-fading-testimonials-widget/" target="_blank">Simple Fading Testimonials </a> by <a href="https://www.stephenkempin.co.uk/" target="_blank">Stephen Kempin</a>' );
+	}
+	return $footer_text;
+}
+add_filter( 'admin_footer_text', 'my_custom_admin_credits' );
+// END add admin credits
